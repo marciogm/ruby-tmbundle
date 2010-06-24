@@ -9,9 +9,9 @@
 
 require ENV['TM_SUPPORT_PATH'] + '/lib/textmate'
 
-result = `"${TM_ERB:=erb}" -T - -x | "${TM_RUBY:=ruby}" -c 2&gt;&amp;1`
-print result
-TextMate.go_to :line =&gt; $1 if result =~ /-:(\d+):/</string>
+#result = `"${TM_ERB:=erb}" -T - -x | "${TM_RUBY:=ruby}" -c 2&gt;&amp;1`
+#print result
+#TextMate.go_to :line =&gt; $1 if result =~ /-:(\d+):/</string>
 	<key>input</key>
 	<string>document</string>
 	<key>name</key>
@@ -19,7 +19,7 @@ TextMate.go_to :line =&gt; $1 if result =~ /-:(\d+):/</string>
 	<key>output</key>
 	<string>showAsTooltip</string>
 	<key>scope</key>
-	<string>text.html.ruby, text.html source.ruby</string>
+	<string>text.html.ruby</string>
 	<key>uuid</key>
 	<string>3FB91EC5-A609-40CE-AB53-654BCFBBE42C</string>
 </dict>
