@@ -8,6 +8,7 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/bin/sh
+. "$TM_BUNDLE_SUPPORT/lib/rvm/rvm_textmate"
 
 export RUBYLIB="$TM_BUNDLE_SUPPORT/RubyMate${RUBYLIB:+:$RUBYLIB}"
 export TM_RUBY=$(type -p "${TM_RUBY:-ruby}")
